@@ -3,7 +3,7 @@
 --------------------------------------------------------------*/
 :root{--bs-blue-equilan: #1e497c;--bs-blue-equilan-solid: #0c3eaa;}
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #222222;
 }
 
@@ -23,7 +23,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 p{
@@ -55,6 +55,13 @@ p{
   font-size: 40px;
 }
 
+.scala-grey{
+  filter: grayscale(100%);
+}
+
+.input-group-addon{
+  color:#ff0000; background-color: #ffffff;
+}
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
@@ -255,7 +262,7 @@ p{
   align-items: center;
   justify-content: space-between;
   padding: 10px 0 10px 30px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #363636;
   white-space: nowrap;
   transition: 0.3s;
@@ -597,7 +604,7 @@ p{
 }
 
 .hero .btn-get-started {
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 1px;
@@ -815,7 +822,7 @@ section {
 }
 
 .cta .cta-btn {
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 1px;
@@ -976,7 +983,7 @@ height: 230px;
 .counts .count-box p {
   padding: 0 0 20px 0;
   margin: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 14px;
 }
 
@@ -986,7 +993,7 @@ height: 230px;
   margin-top: 20px;
   color: #7b7b7b;
   font-size: 15px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
   transition: ease-in-out 0.3s;
 }
 
@@ -1536,7 +1543,7 @@ height: 230px;
   font-size: 36px;
   color: var(--bs-blue-equilan);
   font-weight: 600;
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
   margin-bottom: 20px;
 }
 
@@ -1592,7 +1599,7 @@ height: 230px;
   transition: none;
   font-size: 14px;
   font-weight: 400;
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 600;
   transition: 0.3s;
 }
@@ -1640,13 +1647,13 @@ height: 230px;
 .faq .faq-list .question {
   display: block;
   position: relative;
-  font-family: var(--bs-blue-equilan);
+  color: var(--bs-blue-equilan);
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
   padding-left: 25px;
   cursor: pointer;
-  color: #32969a;
+  /*color: #32969a;*/
   transition: 0.3s;
 }
 
@@ -1694,6 +1701,132 @@ height: 230px;
   position: relative;
 }
 
+/*--------------------------------------------------------------
+# Instituciones
+--------------------------------------------------------------*/
+#instituciones {
+  padding-top: 30px;
+}
+
+#instituciones .input-group-text{
+  height: 43px;
+  width: 43px;
+  padding: 0px;
+  border: 0px;  
+  /* height: 43px;
+  width: 43px;
+  border-radius: 0px;
+  background: #335eee;
+  color: #FFF; */
+}
+
+.instituciones .info-box {
+  color: #222222;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(214, 215, 216, 0.5);
+  padding: 20px 0 30px 0;
+}
+
+.instituciones .info-box i {
+  font-size: 32px;
+  color: var(--bs-blue-equilan);
+  border-radius: 50%;
+  padding: 8px;
+  border: 2px dotted #c5ebec;
+}
+
+.instituciones .info-box h3 {
+  font-size: 20px;
+  color: #777777;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.instituciones .info-box p {
+  padding: 0;
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.instituciones .php-email-form {
+  box-shadow: 0 0 20px rgba(214, 215, 216, 0.5);
+  padding: 30px;
+}
+
+.instituciones .php-email-form .error-message {
+  display: none;
+  color: #fff;
+  background: #ed3c0d;
+  text-align: left;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.instituciones .php-email-form .error-message br+br {
+  margin-top: 25px;
+}
+
+.instituciones .php-email-form .sent-message {
+  display: none;
+  color: #fff;
+  background: #18d26e;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.instituciones .php-email-form .loading {
+  display: none;
+  background: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+.instituciones .php-email-form .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid #18d26e;
+  border-top-color: #eee;
+  animation: animate-loading 1s linear infinite;
+}
+
+.instituciones .php-email-form input,
+.instituciones .php-email-form textarea {
+  border-radius: 4px;
+  box-shadow: none;
+  font-size: 14px;
+}
+
+.instituciones .php-email-form input:focus,
+.instituciones .php-email-form textarea:focus {
+  border-color: var(--bs-blue-equilan);
+}
+
+.instituciones .php-email-form input {
+  padding: 10px 15px;
+}
+
+.instituciones .php-email-form textarea {
+  padding: 12px 15px;
+}
+
+.instituciones .php-email-form button[type=submit] {
+  background: var(--bs-blue-equilan);
+  border: 0;
+  padding: 10px 30px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 4px;
+}
+
+.instituciones .php-email-form button[type=submit]:hover {
+  background: var(--bs-blue-equilan);
+}
 
 /*--------------------------------------------------------------
 # Contact
@@ -1893,7 +2026,7 @@ height: 230px;
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 #footer .footer-top .social-links a {

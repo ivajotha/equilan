@@ -14,7 +14,11 @@
   <link href="assets/images//apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<!--<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">-->
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
@@ -54,7 +58,7 @@
               <li><a href="tapicerias-secador.html">Lava Tapicerias / Secador Alfombra</a></li>
             </ul>
           </li>
-          <li><a class="nav-link" href="#">productos</a></li>
+          <!--<li><a class="nav-link" href="#">productos</a></li>-->
           <li><a class="nav-link" href="#">Sanitización</a></li>         
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -123,7 +127,105 @@
   
         </div>
       </section><!-- End Certificaciones Section -->
+
+      <!-- ======= Instituciones ======= -->
+      <section id="instituciones" class="instituciones">
+
+        <div class="container">
+      
+          <div class="row">
   
+            <div class="col-lg-6 content aos-init aos-animate" data-aos="fade-left">
+              <h2>¿Necesitas limpiar las áreas públicas y privadas de tu institución para cubrir las medidas sanitarias?</h2>
+              <br>
+              <p>En Equilan sabemos que es un reto limpiar y desinfectar las escuelas para ayudar a disminuir la propagación de los virus en aquellos espacios donde diariamente un gran número de estudiantes, docentes y personal, conviven durante largas horas. Tenemos los equipos, los productos y los químicos para que realices la limpieza total de tus espacios.</p>
+            </div>
+            <div class="col-lg-6 aos-init aos-animate" data-aos="fade-right">
+              <form action="#" method="post" role="form" class="php-email-form">
+                
+                <div class="form-group mt-3">
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text">
+                        <img src="assets/images/name.png" class="img-fluid" alt="">
+                      </div>
+                    </div> 
+                    <input id="name" name="name" placeholder="Nombre completo:" type="text" class="form-control">
+                  </div>                  
+                </div>
+  
+                <div class="form-group mt-3">
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text">
+                        <img src="assets/images/mail.png" class="img-fluid" alt="">
+                      </div>
+                    </div> 
+                    <input id="email" name="email" placeholder="Correo electrónico:" type="text" class="form-control">
+                  </div>                  
+                </div>
+
+                <div class="form-group mt-3">
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text">
+                        <img src="assets/images/place.png" class="img-fluid" alt="">
+                      </div>
+                    </div> 
+                    <input id="city" name="city" placeholder="Ciudad:" type="text" class="form-control">
+                  </div>                  
+                </div>                
+
+                <div class="form-group mt-3">
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text">
+                        <img src="assets/images/service.png" class="img-fluid" alt="">
+                      </div>
+                    </div> 
+                    <!-- <input id="city" name="city" placeholder="Ciudad:" type="text" class="form-control"> -->
+                    <select class="required form-select" name="interest" id="interest" placeholder="Interés">
+                      <option value="" disabled selected>Interés</option>
+                      <option value="Me interesan los equipos de limpieza para escuelas">Equipos de limpieza</option>
+                      <option value="Me interesan la renta de equipos de limpieza para escuelas">Renta de equipos</option>
+                      <option value="Me interesa el servicio de Sanitización de escuelas">Sanitización</option>
+                      <option value="Me interesan los químicos de limpieza para escuelas">Químicos</option>
+                      <option value="Me interesan los insumos de limpieza para escuelas">Insumos</option>
+                    </select>                      
+                  </div>                  
+                </div>  
+
+                <div class="form-group mt-3">
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text">
+                        <img src="assets/images/phone.png" class="img-fluid" alt="">
+                      </div>
+                    </div> 
+                    <input type="text" class="form-control" name="telephone" id="telephone" placeholder="Contacto" required="">
+                  </div>                  
+                </div>  
+
+                <!-- <div class="form-group mt-3">
+                  <input type="text" class="form-control" name="telephone" id="telephone" placeholder="Contacto" required="">
+                </div>                 -->
+                <div class="my-3">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+                </div>
+                <div class="text-center">
+                  <a id="enviarContacto" class="appointment-btn rounded-pill">¿QUIERES QUE TE LLAMEMOS?</a>
+                </div>
+              </form>
+            </div>
+  
+          </div>
+  
+        </div>        
+        
+      </section><!-- End Instituciones Section -->
+      
       <!-- ======= About Us Section ======= -->
       <section id="about" class="about">
         <div class="container" data-aos="fade-up">
@@ -235,7 +337,7 @@
                   <h5 class="left-col">Institucional</h5>
                   <p class="left-col">Proporcionamos gestión de proyectos de limpieza para diversas instituciones y negocios, como centros comerciales, instituciones educativas, gimnasios, oficinas corpporativas, casinos, hoteles y más</p>
                 </div>
-                <div class="col-sm-4 text-center"><img src="assets/images/icono_1.svg"  class="img-fluid" alt=""></div>
+                <div class="col-sm-4 text-center"><img src="assets/images/institucional.svg"  class="img-fluid" alt=""></div>
               </div>
             </div>
 
@@ -246,7 +348,7 @@
                   <h5 class="left-col">Extraordinaria</h5>
                   <p class="left-col">Limpieza de ductos, techos, techumbres, paredes, en alturas, bodegas, termino de obra, estacionamientos, restaurantes, laboratorios, procesadoras cárnicas, ambientes controlados etc; por contrato programados o servicios eventuales.</p>
                 </div>
-                <div class="col-sm-4 text-center"><img src="assets/images/icono_1.svg"  class="img-fluid" alt=""></div>
+                <div class="col-sm-4 text-center"><img src="assets/images/extraordinaria.svg"  class="img-fluid" alt=""></div>
               </div>
             </div>
 
@@ -259,7 +361,7 @@
 
             <div class="box-icon">
               <div class="row">
-                <div class="col-sm-4 text-center"><img src="assets/images/icono_1.svg"  class="img-fluid" alt=""></div>
+                <div class="col-sm-4 text-center"><img src="assets/images/industria.svg"  class="img-fluid" alt=""></div>
                 <div class="col-sm-8">
                   <h5 class="right-col">Industrial</h5>
                   <p class="right-col">Gestoría de proyectos de limpieza industrial, contratos de limpieza para la industria química, metalmecánica, alimenticia, farmacéutica recicladora, papelera, etc.</p>
@@ -270,7 +372,7 @@
 
             <div class="box-icon mt-5">
               <div class="row">
-                <div class="col-sm-4 text-center"><img src="assets/images/icono_1.svg"  class="img-fluid" alt=""></div>
+                <div class="col-sm-4 text-center"><img src="assets/images/sanitizacion.svg"  class="img-fluid" alt=""></div>
                 <div class="col-sm-8">
                   <h5 class="right-col">Sanitización</h5>
                   <p class="right-col">Desinfección y sanitizacion de oficinas, restaurantes, gimnasios, centros comerciales, industria en general, farmacias, higiene total y segura con limpieza manual a detalle</p>
@@ -509,7 +611,7 @@
               2024 &copy;
             </div>
             <div class="logo mt-3">
-              <img src="assets/images/equilan.png">
+              <img src="assets/images/equilan.png" class="scala-grey">
             </div>            
           </div>
 
